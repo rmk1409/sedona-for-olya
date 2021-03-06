@@ -1,0 +1,99 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  margin: 0 auto;
+  font-family: "PT Sans", "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.description {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  display: block;
+  width: 280px;
+  padding: 9px 20px 9px 20px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $blue;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.input {
+  font-size: 18px;
+  font-weight: bold;
+  color: $black;
+  background-color: $gray-light;
+  border: none;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: bold;
+  color: $black;
+  text-transform: none;
+}
+
+.fieldset-reset {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}

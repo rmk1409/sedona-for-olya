@@ -12,4 +12,200 @@
   font-weight: bold;
   font-style: normal; }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.page {
+  margin: 0 auto;
+  font-family: "PT Sans", "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px; }
+
+.description {
+  margin: 0;
+  padding: 0; }
+
+.button {
+  display: block;
+  width: 280px;
+  padding: 9px 20px 9px 20px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  outline: none;
+  border: none;
+  cursor: pointer; }
+
+.input {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none; }
+
+.label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: none; }
+
+.fieldset-reset {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none; }
+
+*,
+::after,
+::before {
+  box-sizing: border-box; }
+
+.navigation {
+  background-color: #81b3d2; }
+
+.navigation__link {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff; }
+
+.nav-list {
+  outline: 2px solid red; }
+
+.header-img {
+  background-image: url("../img/back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  outline: 2px solid red; }
+
+.initial {
+  outline: 2px solid red; }
+
+.reason {
+  color: #ffffff;
+  background-color: #81b3d2; }
+
+.advantages {
+  outline: 2px solid red; }
+
+.other-reasons {
+  background-color: #eeeeee;
+  outline: 2px solid red; }
+
+.find-hotel {
+  outline: 2px solid red; }
+
+.find-hotel__title {
+  font-size: 21px;
+  line-height: 26px; }
+
+.photo-video {
+  outline: 2px solid red; }
+
+.photo-block {
+  outline: 2px solid red; }
+
+.photo-block__card {
+  outline: 2px solid darkblue; }
+
+.photo-block__title {
+  font-size: 14px; }
+
+.photo-block__description {
+  text-transform: none; }
+
+.photo-block__counter {
+  font-size: 14px;
+  font-weight: bold; }
+
+.presentation {
+  outline: 2px solid red; }
+
+.form {
+  outline: 2px solid red; }
+
+.personal-info {
+  outline: 2px solid darkblue; }
+
+.contact-info {
+  outline: 2px solid darkblue; }
+
+.impression-info {
+  outline: 2px solid darkblue; }
+
+.visited-info {
+  outline: 2px solid darkblue; }
+
+.comment {
+  outline: 2px solid darkblue; }
+
+.footer {
+  outline: 2px solid red; }
+
+.footer__title {
+  font-size: 21px; }
+
+.address {
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  outline: 2px solid red; }
+
+.social {
+  outline: 2px solid red; }
+
+.social__link {
+  background-color: #81b3d2; }
+
+.development__title {
+  font-size: 14px;
+  font-weight: normal; }
+
+.success-pop-up {
+  outline: 2px solid red; }
+
+.success-pop-up__wrapper {
+  background-color: #f2f2f2; }
+
+.failure-pop-up {
+  outline: 2px solid red; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+.photo-block {
+  outline: 2px solid red;
+}
+
+.photo-block__card {
+  outline: 2px solid darkblue;
+}
+
+.photo-block__title {
+  font-size: 14px;
+}
+
+.photo-block__description {
+  text-transform: none;
+}
+
+.photo-block__counter {
+  font-size: 14px;
+  font-weight: bold;
+}
