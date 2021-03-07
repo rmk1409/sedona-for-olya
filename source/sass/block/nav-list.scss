@@ -1,9 +1,37 @@
 .nav-list {
+  display: flex;
+  flex-direction: column;
   outline: 2px solid red;
+}
+
+.nav-list__link {
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 18px;
+  font-weight: bold;
+  color: $white;
 }
 
 .nav-list__item {
   text-align: center;
   border-top: 1px solid $blue-light;
   border-bottom: 1px solid $blue-dark;
+}
+
+@media (min-width: $tablet-width) {
+  .nav-list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    padding: 0 33px;
+  }
+
+  .nav-list__link {
+    color: $black;
+  }
+
+  .nav-list__item {
+    border: none;
+  }
 }

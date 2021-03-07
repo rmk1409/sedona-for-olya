@@ -1,6 +1,6 @@
 .find-hotel {
-  padding: 20px 30px;
-  outline: 2px solid red;
+  max-width: 482px;
+  padding: 20px 20px;
 }
 
 .find-hotel__title {
@@ -14,4 +14,18 @@
 
 .find-hotel__button {
   margin-top: 24px;
+}
+
+.find-hotel__br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .find-hotel__title {
+    font-size: 30px;
+  }
+
+  .find-hotel__br {
+    display: block;
+  }
 }

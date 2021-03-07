@@ -1,7 +1,17 @@
 .other-reasons {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   padding: 25px 24px;
   outline: 2px solid red;
+}
+
+@media (min-width: $tablet-width) {
+  .other-reasons {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }

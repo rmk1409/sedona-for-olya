@@ -4,9 +4,15 @@
   align-items: center;
   gap: 16px;
   padding: 26px 20px;
-  outline: 2px solid red;
 }
 
 .footer__title {
   font-size: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

@@ -10,3 +10,40 @@
 .form__description {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .form__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form__impression-info {
+    grid-column-start: 1;
+    grid-row-start: 1
+  }
+
+  .form__contact-info {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .form__description {
+    display: block;
+  }
+
+  .form__group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__button {
+    max-width: 324px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__button {
+    max-width: 480px;
+  }
+}

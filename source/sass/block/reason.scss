@@ -1,13 +1,52 @@
 .reason {
-  color: $white;
-  background-color: $blue;
+  display: flex;
+  flex-direction: column;
 }
 
 .reason__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  align-items: center;
   padding: 25px 24px;
+  color: $white;
+  background-color: $blue;
 }
 
 .reason__img {
   display: block;
   margin: 0 auto;
+}
+
+.reason__title,
+.reason__description,
+.reason__number {
+  max-width: 192px;
+}
+
+@media (min-width: $tablet-width) {
+  .reason {
+    flex-direction: row;
+
+    &--second {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .reason__text {
+    margin: 0;
+  }
+
+  .reason__img {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason__title,
+  .reason__description,
+  .reason__number {
+    max-width: 295px;
+  }
 }

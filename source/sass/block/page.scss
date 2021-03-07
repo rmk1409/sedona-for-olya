@@ -1,3 +1,26 @@
+.page {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "PT Sans", "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .page__wrapper {
   background-color: $gray;
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $tablet-width) {
+  .page {
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+  }
 }

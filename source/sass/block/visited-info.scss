@@ -21,3 +21,10 @@
 .visited-info__label {
   padding-left: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .visited-info__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

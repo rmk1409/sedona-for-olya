@@ -1,9 +1,18 @@
 .header-img {
+  position: relative;
   min-height: 370px;
-  padding-top: 179px;
+  padding-top: 87px;
   background-image: url("../img/back-desktop@1x.jpg");
   background-repeat: no-repeat;
-  outline: 2px solid red;
   background-position: center;
   background-size: cover;
 }
+
+.header-img__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px;
+}
+
+

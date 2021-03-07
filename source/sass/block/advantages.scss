@@ -10,3 +10,9 @@
 .advantages__description {
   margin-top: 17px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    flex-direction: row;
+  }
+}
