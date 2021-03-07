@@ -1,3 +1,23 @@
 .impression-info {
+  padding: 20px 20px;
   outline: 2px solid darkblue;
+}
+
+.impression-info__title {
+  text-align: center;
+}
+
+.impression-info__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.impression-info__input {
+  display: none;
+}
+
+.impression-info__label {
+  padding-left: 30px;
 }

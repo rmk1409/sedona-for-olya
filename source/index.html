@@ -9,7 +9,23 @@
 <body class="page">
 <header>
   <nav class="navigation">
-    <div>
+    <div class="navigation__wrapper">
+      <ul class="navigation__list nav-list reset-list">
+        <li class="nav-list__item">
+          <a class="navigation__link" href="#">Главная</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="navigation__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="navigation__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="navigation__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
       <a class="navigation__link" href="#">
         <img class="navigation__logo" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
       </a>
@@ -17,40 +33,28 @@
         <span class="visually-hidden">Переключение</span>
       </button>
     </div>
-    <ul class="navigation__list nav-list reset-list">
-      <li class="nav-list__item">
-        <a class="navigation__link" href="#">Главная</a>
-      </li>
-      <li class="nav-list__item">
-        <a class="navigation__link" href="catalog.html">Фото и видео</a>
-      </li>
-      <li class="nav-list__item">
-        <a class="navigation__link" href="form.html">Форма отзыва</a>
-      </li>
-      <li class="nav-list__item">
-        <a class="navigation__link" href="#">HTML Academy</a>
-      </li>
-    </ul>
   </nav>
   <section class="header-img">
     <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-    <img class="header-img__name" src="img/sedona.svg" alt="Седона">
+    <div class="container">
+      <img class="header-img__name" src="img/sedona.svg" alt="Седона">
+    </div>
   </section>
 </header>
 <main>
-  <div class="initial">
+  <div class="initial container">
     <h1 class="initial__title title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
     <p class="initial__description description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
   </div>
   <section class="reason">
-    <div class="reason__text">
+    <div class="reason__text container">
       <h2 class="reason__title title">Настоящий городок</h2>
       <span class="reason__number">-№1-</span>
       <p class="reason__description description">Седона не атракцион для туристов, там течет своя жизнь</p>
     </div>
-    <img class="reason-img__second" src="img/photo-city@1x.jpg" width="320" height="260" alt="Изображение города Седоны">
+    <img class="reason__img reason__img--first" src="img/photo-city@1x.jpg" width="320" height="260" alt="Изображение города Седоны">
   </section>
-  <ul class="advantages reset-list">
+  <ul class="advantages container reset-list">
     <li class="advantages__item">
       <h2 class="advantages__title title">Жилье</h2>
       <p class="advantages__description description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -65,40 +69,42 @@
     </li>
   </ul>
   <section class="reason">
-    <div class="reason__text">
+    <div class="reason__text container">
       <h2 class="reason__title title">Там есть Мост дьявола</h2>
       <span class="reason__number">-№2-</span>
       <p class="reason__description description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
     </div>
-    <img class="reason-img__second" src="img/photo-bridge@1x.jpg" width="320" height="260" alt="Изображение моста Дьявола">
+    <img class="reason__img reason__img--second" src="img/photo-bridge@1x.jpg" width="320" height="260" alt="Изображение моста Дьявола">
   </section>
-  <ul class="other-reasons reset-list">
-    <li>
-      <h2 class="reason__title title">Небольшая площадь</h2>
-      <span class="reason__number">-№3-</span>
-      <p class="reason__description description">Все интересные места находятся очень близко</p>
-    </li>
-    <li>
-      <h2 class="reason__title title">Красивая дорога</h2>
-      <span class="reason__number">-№4-</span>
-      <p class="reason__description description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-    </li>
-    <li>
-      <h2 class="reason__title title>Мало туристов"></h2>
-      <span class="reason__number">-№5-</span>
-      <p class="reason__description description">Большинство едет в Гранд Каньен и толпиться там</p>
-    </li>
-  </ul>
-  <section class="find-hotel">
+  <div class="page__wrapper">
+    <ul class="other-reasons container reset-list">
+      <li>
+        <h2 class="reason__title title">Небольшая площадь</h2>
+        <span class="reason__number">-№3-</span>
+        <p class="reason__description description">Все интересные места находятся очень близко</p>
+      </li>
+      <li>
+        <h2 class="reason__title title">Красивая дорога</h2>
+        <span class="reason__number">-№4-</span>
+        <p class="reason__description description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </li>
+      <li>
+        <h2 class="reason__title title>Мало туристов"></h2>
+        <span class="reason__number">-№5-</span>
+        <p class="reason__description description">Большинство едет в Гранд Каньен и толпиться там</p>
+      </li>
+    </ul>
+  </div>
+  <section class="find-hotel container">
     <h2 class="find-hotel__title title">Заинтересовались?</h2>
       <p class="find-hotel__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button class="find-hotel__button button">Найти гостиницу</button>
   </section>
   <section class="address">
-    <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050595179!2d-111.83015786188756!3d34.85437338107108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1614911404508!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050595179!2d-111.83015786188756!3d34.85437338107108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1614911404508!5m2!1sru!2sby" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
 </main>
-<footer class="footer">
+<footer class="footer container">
   <h2 class="footer__title title">#Visitsedona</h2>
   <ul class="footer__social social reset-list">
     <li>

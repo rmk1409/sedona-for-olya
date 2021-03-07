@@ -1,8 +1,15 @@
 .navigation {
+
+}
+
+.navigation__wrapper {
   background-color: $blue;
 }
 
 .navigation__link {
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
   font-size: 18px;
   font-weight: bold;
   color: $white;

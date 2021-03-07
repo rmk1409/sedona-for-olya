@@ -12,6 +12,7 @@
 }
 
 .page {
+  min-width: 320px;
   margin: 0 auto;
   font-family: "PT Sans", "Roboto", sans-serif;
   font-weight: normal;
@@ -19,7 +20,9 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  text-align: center;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -34,12 +37,6 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.container {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .title {
@@ -57,9 +54,9 @@ a {
 
 .button {
   display: block;
-  width: 280px;
+  width: 100%;
   padding: 9px 20px 9px 20px;
-  text-align: center;
+  margin: 0 auto;
   font-size: 21px;
   line-height: 26px;
   color: $white;
@@ -90,6 +87,12 @@ a {
   padding: 0;
   outline: none;
   border: none;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 *,

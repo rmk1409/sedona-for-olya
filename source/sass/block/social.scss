@@ -1,7 +1,16 @@
 .social {
+  display: flex;
+  justify-content: space-between;
+  width: 151px;
   outline: 2px solid red;
 }
 
 .social__link {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 48px;
+  width: 46px;
   background-color: $blue;
 }

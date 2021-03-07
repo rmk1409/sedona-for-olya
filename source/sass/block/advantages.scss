@@ -1,3 +1,12 @@
 .advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px 24px;
+  text-align: start;
   outline: 2px solid red;
+}
+
+.advantages__description {
+  margin-top: 17px;
 }

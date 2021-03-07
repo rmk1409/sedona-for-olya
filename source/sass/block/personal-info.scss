@@ -1,3 +1,24 @@
 .personal-info {
+  padding: 20px 20px;
   outline: 2px solid darkblue;
+}
+.personal-info__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.personal-info__title {
+  text-align: center;
+}
+
+.personal-info__label {
+  display: flex;
+  gap: 10px;
+}
+
+.personal-info__input {
+  width: 100%;
+  padding: 10px 10px;
 }

@@ -1,6 +1,7 @@
 @import "colors";
 @import "fonts";
 @import "common";
+@import "block/page";
 @import "block/navigation";
 @import "block/nav-list";
 @import "block/header-img";
@@ -11,7 +12,9 @@
 @import "block/find-hotel";
 @import "block/photo-video";
 @import "block/photo-block";
+@import "block/video";
 @import "block/presentation";
+@import "block/feadback";
 @import "block/form";
 @import "block/personal-info";
 @import "block/contact-info";

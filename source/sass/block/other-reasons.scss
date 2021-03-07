@@ -1,4 +1,7 @@
 .other-reasons {
-  background-color: $gray;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px 24px;
   outline: 2px solid red;
 }

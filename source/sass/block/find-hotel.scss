@@ -1,8 +1,17 @@
 .find-hotel {
+  padding: 20px 30px;
   outline: 2px solid red;
 }
 
 .find-hotel__title {
   font-size: 21px;
   line-height: 26px;
+}
+
+.find-hotel__description {
+  margin-top: 24px;
+}
+
+.find-hotel__button {
+  margin-top: 24px;
 }

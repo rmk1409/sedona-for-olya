@@ -1,5 +1,9 @@
 .header-img {
-  background-image: url("../img/back-mobile@1x.jpg");
+  min-height: 370px;
+  padding-top: 179px;
+  background-image: url("../img/back-desktop@1x.jpg");
   background-repeat: no-repeat;
   outline: 2px solid red;
+  background-position: center;
+  background-size: cover;
 }

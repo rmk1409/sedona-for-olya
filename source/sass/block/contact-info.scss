@@ -1,3 +1,21 @@
 .contact-info {
+  padding: 20px 20px;
   outline: 2px solid darkblue;
+}
+
+.contact-info__list {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  margin-top: 20px;
+}
+
+.contact-info__title {
+  text-align: center;
+}
+
+.contact-info__input {
+  width: 100%;
+  padding: 10px 10px;
+  margin-top: 10px;
 }
