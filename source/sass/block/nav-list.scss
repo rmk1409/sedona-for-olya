@@ -1,13 +1,12 @@
 .nav-list {
   display: flex;
   flex-direction: column;
-  outline: 2px solid red;
 }
 
 .nav-list__link {
   display: block;
   width: 100%;
-  padding: 12px 14px;
+  padding: 18px 15px 15px 15px;
   font-size: 18px;
   font-weight: bold;
   color: $white;
@@ -19,19 +18,39 @@
   border-bottom: 1px solid $blue-dark;
 }
 
+.nav-list__item--logo {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .nav-list {
     flex-direction: row;
     justify-content: space-between;
     width: auto;
-    padding: 0 33px;
   }
 
   .nav-list__link {
+    width: 153px;
+    height: min-content;
     color: $black;
+    font-size: 14px;
+
+    &--logo {
+      padding: 0;
+    }
   }
 
   .nav-list__item {
     border: none;
+  }
+
+  .nav-list__item--logo {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav-list__link {
+    width: 239px;
   }
 }

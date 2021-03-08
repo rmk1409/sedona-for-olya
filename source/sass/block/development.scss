@@ -1,9 +1,14 @@
 .development {
   display: flex;
-  gap: 25px;
+  gap: 13px;
+  align-items: center;
 }
 
 .development__title {
   font-size: 14px;
   font-weight: normal;
+}
+
+.development__logo {
+  margin-top: 5px;
 }

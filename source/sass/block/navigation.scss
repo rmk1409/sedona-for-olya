@@ -56,7 +56,7 @@
 .navigation--opened .navigation__toggle::before{
   content: "";
   position: absolute;
-  top: 10px;
+  top: 15px;
   left: 10px;
   width: 22px;
   height: 22px;
@@ -78,6 +78,14 @@
 
 @media (min-width: $tablet-width) {
   .navigation__wrapper {
-    background-color: $white;
+    background-color: transparent;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__link {
+    display: none;
   }
 }

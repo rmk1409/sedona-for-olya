@@ -1,8 +1,8 @@
 .social {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 151px;
-  outline: 2px solid red;
 }
 
 .social__link {
