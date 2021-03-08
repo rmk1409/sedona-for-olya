@@ -8,7 +8,7 @@
 </head>
 <body class="page">
 <header>
-  <nav class="navigation">
+  <nav class="navigation navigation--closed navigation--nojs">
     <div class="navigation__wrapper">
       <ul class="navigation__list nav-list reset-list">
         <li class="nav-list__item">
@@ -25,14 +25,12 @@
         </li>
       </ul>
     </div>
-    <div class="container">
-      <a class="navigation__link" href="#">
-        <img class="navigation__logo" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
-      </a>
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Переключение</span>
-      </button>
-    </div>
+    <a class="navigation__link" href="#">
+      <img class="navigation__logo" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+    </a>
+    <button class="navigation__toggle" type="button">
+      <span class="visually-hidden">Переключение</span>
+    </button>
   </nav>
   <section class="header-img">
     <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
@@ -168,5 +166,6 @@
     </a>
   </section>
 </footer>
+<script src="js/toggle.js"></script>
 </body>
 </html>
