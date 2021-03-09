@@ -5,11 +5,29 @@
   &::before {
     content: "";
     position: absolute;
+    top: -57px;
+    left: 0;
+    right: 0;
+    width: 320px;
+    height: 57px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("../img/element-mobil.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
     top: 92%;
-    left: -70%;
-    width: 768px;
-    height: 36px;
-    background-image: url("../img/element-mobile.svg");
+    left: 0;
+    right: 0;
+    width: 320px;
+    height: 37px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("../img/element-mobil-two.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -21,8 +39,32 @@
 
 @media (min-width: $tablet-width) {
   .initial {
-    max-width: 534px;
+    max-width: 100%;
     padding: 45px 25px 54px 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -57px;
+      left: 0;
+      right: 0;
+      width: 768px;
+      height: 57px;
+      margin: 0 auto;
+      text-align: center;
+      background-image: url("../img/element-tablet.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .initial__title {
+    width: 602px;
+    margin: 0 auto;
   }
 }
 

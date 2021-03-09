@@ -37,7 +37,11 @@
     gap: 13px;
     width: 261px;
     padding: 23px 38px 23px 38px;
-    border: none;
+
+    &:nth-child(1),
+    &:nth-child(2){
+      border-bottom: none;
+    }
   }
 
   .other-reasons__title {

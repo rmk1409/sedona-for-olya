@@ -1,5 +1,4 @@
 .header-img {
-  position: relative;
   z-index: -1;
   min-height: 390px;
   padding-top: 91px;
@@ -8,6 +7,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  &--catalog {
+    min-height: 159px;
+    padding-top: 53px;
+  }
 }
 
 .header-img__group {
@@ -25,5 +29,19 @@
 @media (min-width: $tablet-width) {
   .header-img {
     min-height: 520px;
+
+    &--catalog {
+      min-height: 292px;
+    }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header-img {
+    &--catalog {
+      min-height: 303px;
+    }
+  }
+}
+
+

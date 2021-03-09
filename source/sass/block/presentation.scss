@@ -1,8 +1,35 @@
 .presentation {
-  padding: 20px 20px;
-  outline: 2px solid red;
+  padding: 31px 0 45px;
 }
 
 .presentation__description {
-  margin-top: 20px;
+  margin-top: 28px;
+  padding: 0 22px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .presentation {
+    padding: 58px 0 49px;
+  }
+
+  .presentation__title {
+    font-size: 30px;
+  }
+
+  .presentation__description {
+    width: 488px;
+    margin: 32px auto 0;
+  }
+
+  .presentation__video {
+    margin-top: 79px;
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .presentation {
+    padding: 61px 0 92px;
+  }
 }
