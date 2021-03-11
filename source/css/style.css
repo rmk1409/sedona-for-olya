@@ -67,7 +67,7 @@ a {
   cursor: pointer; }
 
 .input {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: #000000;
   background-color: #f2f2f2;
@@ -857,22 +857,41 @@ a {
     padding: 61px 0 92px; } }
 
 .feedback {
-  padding: 20px 20px; }
+  padding: 35px 20px 18px; }
 
 .feedback__description {
-  margin-top: 20px; }
+  margin-top: 28px;
+  line-height: 24px; }
+
+@media (min-width: 768px) {
+  .feedback {
+    padding: 63px 20px 86px; }
+  .feedback__title {
+    font-size: 30px; }
+  .feedback__description {
+    width: 437px;
+    margin: 32px auto 0; } }
+
+@media (min-width: 1280px) {
+  .feedback {
+    padding: 113px 120px 59px; } }
 
 .form {
   text-align: start;
-  outline: 2px solid red; }
+  padding-bottom: 27px; }
 
 .form__group {
-  padding: 20px 20px; }
+  padding: 17px 20px; }
 
 .form__description {
   display: none; }
 
+.form__button {
+  padding: 19px 20px 13px 20px; }
+
 @media (min-width: 768px) {
+  .form {
+    padding-bottom: 44px; }
   .form__grid {
     display: grid;
     grid-template-columns: 1fr 1fr; }
@@ -886,44 +905,75 @@ a {
     display: block; }
   .form__group {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px; }
   .form__button {
     max-width: 324px;
     margin: 0; } }
 
 @media (min-width: 1280px) {
+  .form {
+    padding-bottom: 52px; }
+  .form__grid {
+    padding: 0 63px; }
+  .form__group {
+    padding: 22px 120px; }
   .form__button {
     max-width: 480px; } }
 
 .personal-info {
-  padding: 20px 20px;
-  outline: 2px solid darkblue; }
+  padding: 19px 20px 27px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5; }
 
 .personal-info__list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-top: 20px; }
+  gap: 22px;
+  margin-top: 19px; }
 
 .personal-info__title {
   text-align: center; }
 
 .personal-info__label {
   display: flex;
-  gap: 10px; }
+  align-items: center;
+  gap: 12px; }
 
 .personal-info__input {
   width: 100%;
-  padding: 10px 10px; }
+  padding: 22px 22px 16px; }
+
+@media (min-width: 768px) {
+  .personal-info {
+    padding: 0 59px;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #e5e5e5; }
+  .personal-info__title {
+    text-align: start; }
+  .personal-info__list {
+    gap: 22px;
+    margin-top: 57px; } }
+
+@media (min-width: 1280px) {
+  .personal-info {
+    padding: 0 59px 0 76px; }
+  .personal-info__label {
+    gap: 17px; } }
 
 .contact-info {
-  padding: 20px 20px;
-  outline: 2px solid darkblue; }
+  padding: 18px 20px 28px;
+  border-bottom: 1px solid #e5e5e5; }
+
+.contact-info__label {
+  margin-left: 22px; }
 
 .contact-info__list {
   display: flex;
   flex-direction: column;
-  gap: 21px;
+  gap: 15px;
   margin-top: 20px; }
 
 .contact-info__title {
@@ -931,21 +981,40 @@ a {
 
 .contact-info__input {
   width: 100%;
-  padding: 10px 10px;
+  padding: 23px 21px 17px;
   margin-top: 10px; }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
+  .contact-info {
+    padding: 45px 61px 34px;
+    border-bottom: none; }
   .contact-info__list {
-    flex-direction: row; }
+    gap: 25px;
+    margin-top: 22px; }
+  .contact-info__input {
+    margin-top: 12px; } }
+
+@media (min-width: 1280px) {
+  .contact-info {
+    padding: 42px 53px 38px; }
+  .contact-info__span {
+    display: none; }
+  .contact-info__input {
+    margin-top: 0;
+    margin-left: 18px; }
+  .contact-info__list {
+    display: grid;
+    grid-template-columns: 399px 478px;
+    gap: 84px;
+    margin-top: 70px; }
   .contact-info__label {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 99px; } }
+    align-items: center;
+    margin-left: 0; } }
 
 .impression-info {
-  padding: 20px 20px;
-  outline: 2px solid darkblue; }
+  padding: 18px 20px 43px;
+  border-bottom: 1px solid #e5e5e5; }
 
 .impression-info__title {
   text-align: center; }
@@ -953,52 +1022,98 @@ a {
 .impression-info__list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-top: 20px; }
+  gap: 46px;
+  margin-top: 39px; }
 
 .impression-info__input {
   display: none; }
 
 .impression-info__label {
-  padding-left: 30px; }
+  padding-left: 79px; }
+
+@media (min-width: 768px) {
+  .impression-info {
+    padding: 0 20px 43px;
+    border-bottom: none; }
+  .impression-info__title {
+    margin-left: 7px; }
+  .impression-info__list {
+    gap: 55px;
+    margin-top: 75px; }
+  .impression-info__label {
+    padding-left: 115px; } }
 
 .visited-info {
-  padding: 20px 20px;
-  outline: 2px solid darkblue; }
+  padding: 12px 20px 41px;
+  border-bottom: 1px solid #e5e5e5; }
 
 .visited-info__title {
   text-align: center; }
 
 .visited-info__list {
-  margin-top: 20px;
+  margin-top: 38px;
   display: flex;
   flex-direction: column;
-  gap: 20px; }
+  gap: 57px; }
 
 .visited-info__input {
   display: none; }
 
-.visited-info__label {
-  padding-left: 30px; }
+.visited-info__item {
+  padding-left: 79px; }
 
 @media (min-width: 768px) {
+  .visited-info {
+    padding: 15px 150px 66px;
+    border-bottom: none; }
   .visited-info__list {
     display: grid;
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr;
+    margin-top: 61px;
+    -moz-column-gap: 53px;
+         column-gap: 53px;
+    row-gap: 65px; }
+  .visited-info__title {
+    width: 309px;
+    margin: 0 auto; }
+  .visited-info__item {
+    padding-left: 85px; } }
+
+@media (min-width: 1280px) {
+  .visited-info {
+    padding: 15px 116px 66px; }
+  .visited-info__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 63px; } }
 
 .comment {
-  padding: 20px 20px;
-  outline: 2px solid darkblue; }
+  padding: 18px 20px 28px; }
 
 .comment__title {
   text-align: center; }
 
 .comment__textarea {
-  margin-top: 20px;
+  margin-top: 15px;
   width: 100%;
   min-height: 160px;
-  padding: 10px 10px;
-  resize: none; }
+  padding: 15px 18px;
+  resize: none;
+  font-size: 15px;
+  line-height: 26px; }
+
+@media (min-width: 768px) {
+  .comment {
+    padding: 18px 60px 28px; }
+  .comment__textarea {
+    padding: 19px 21px;
+    margin-top: 56px; } }
+
+@media (min-width: 1280px) {
+  .comment {
+    padding: 18px 120px 28px; } }
 
 .footer {
   display: flex;

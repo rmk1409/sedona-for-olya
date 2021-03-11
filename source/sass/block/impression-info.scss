@@ -1,6 +1,6 @@
 .impression-info {
-  padding: 20px 20px;
-  outline: 2px solid darkblue;
+  padding: 18px 20px 43px;
+  border-bottom: 1px solid $gray-disabled;
 }
 
 .impression-info__title {
@@ -10,8 +10,8 @@
 .impression-info__list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-top: 20px;
+  gap: 46px;
+  margin-top: 39px;
 }
 
 .impression-info__input {
@@ -19,5 +19,25 @@
 }
 
 .impression-info__label {
-  padding-left: 30px;
+  padding-left: 79px;
+}
+
+@media (min-width: $tablet-width) {
+  .impression-info {
+    padding: 0 20px 43px;
+    border-bottom: none;
+  }
+
+  .impression-info__title {
+    margin-left: 7px;
+  }
+
+  .impression-info__list {
+    gap: 55px;
+    margin-top: 75px;
+  }
+
+  .impression-info__label {
+    padding-left: 115px;
+  }
 }
