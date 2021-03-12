@@ -11,4 +11,13 @@
 
 .development__logo {
   margin-top: 5px;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: $black;
+    opacity: 0.3;
+  }
 }

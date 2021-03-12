@@ -14,12 +14,48 @@
   gap: 57px;
 }
 
+.visited-info__item {
+  padding-left: 79px;
+}
+
 .visited-info__input {
   display: none;
 }
 
-.visited-info__item {
-  padding-left: 79px;
+.visited-info__label {
+  position: relative;
+}
+
+.visited-info__checkbox {
+  position: absolute;
+  top: -16px;
+  left: -79px;
+  width: 56px;
+  height: 56px;
+  background-color: $gray-light;
+  border-radius: 5%;
+
+  &:hover {
+    background-color: $gray-hover;
+  }
+
+  &:active {
+    background-color: $gray-active;
+  }
+}
+
+.visited-info__input:checked + .visited-info__checkbox:before {
+  position: absolute;
+  content: "";
+  top: 19px;
+  left: 16px;
+  width: 23px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
+}
+
+.visited-info__input:checked:active + .visited-info__checkbox:before {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

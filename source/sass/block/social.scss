@@ -13,4 +13,18 @@
   height: 48px;
   width: 46px;
   background-color: $blue;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+  }
+
+  &:active .social__logo {
+    opacity: 0.3;
+  }
 }
+
+

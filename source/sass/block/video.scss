@@ -71,6 +71,21 @@
   background-color: transparent;
 }
 
+.video__replay svg,
+.video__cc svg,
+.video__fullscreen svg {
+  fill: $dark-gray-buttons;
+
+  &:hover {
+    fill: $dark-gray;
+  }
+
+  &:active {
+    fill: $dark-gray;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .video__img {
     width: 648px;
@@ -114,6 +129,16 @@
   .video__cc svg,
   .video__fullscreen svg {
     fill: $white;
+
+    &:hover {
+      fill: $white;
+      opacity: 0.6;
+    }
+
+    &:active {
+      fill: $white;
+      opacity: 0.3;
+    }
   }
 }
 

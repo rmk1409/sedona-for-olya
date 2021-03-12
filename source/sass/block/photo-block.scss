@@ -33,6 +33,10 @@
   font-weight: bold;
 }
 
+.photo-block__like svg {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .photo-block {
     display: grid;
@@ -103,5 +107,10 @@
     padding: 14px 18px 15px 21px;
     color: $white;
     background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .photo-block__like svg {
+    opacity: 1;
+    fill: $white;
   }
 }

@@ -4,6 +4,7 @@
 }
 
 .contact-info__label {
+  position: relative;
   margin-left: 22px;
 }
 
@@ -22,6 +23,35 @@
   width: 100%;
   padding: 23px 21px 17px;
   margin-top: 10px;
+}
+
+.contact-info__img {
+  position: absolute;
+  top: 30px;
+  right: 1px;
+  width: 58px;
+  height: 58px;
+  background-color: $gray-form;
+
+  &--tel:before {
+    position: absolute;
+    content: "";
+    top: 21px;
+    left: 22px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/phone.svg");
+  }
+
+  &--email:before {
+    position: absolute;
+    content: "";
+    top: 21px;
+    left: 22px;
+    width: 16px;
+    height: 12px;
+    background-image: url("../img/mail.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -65,5 +95,10 @@
     display: flex;
     align-items: center;
     margin-left: 0;
+  }
+
+  .contact-info__img {
+    top: 0;
+    right: -3px;
   }
 }

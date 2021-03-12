@@ -10,6 +10,19 @@
   font-size: 18px;
   font-weight: bold;
   color: $white;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+  }
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $blue-dark;
+  }
 }
 
 .nav-list__item {
@@ -34,6 +47,28 @@
     height: min-content;
     color: $black;
     font-size: 14px;
+
+    &:hover {
+      color: $blue;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: $gray-active;
+      background-color: transparent;
+    }
+
+    &--active {
+      color: $gray-link;
+
+      &:hover {
+        color: $gray-link-hover;
+      }
+
+      &:active {
+        color: $gray-link-active;
+      }
+    }
 
     &--logo {
       padding: 0;

@@ -19,7 +19,41 @@
 }
 
 .impression-info__label {
+  position: relative;
   padding-left: 79px;
+}
+
+.impression-info__radio {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  background-color: $gray-light;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $gray-hover;
+  }
+
+  &:active {
+    background-color: $gray-active;
+  }
+}
+
+.impression-info__input:checked + .impression-info__radio:before {
+  position: absolute;
+  content: "";
+  top: 18px;
+  left: 17px;
+  width: 22px;
+  height: 22px;
+  background-color: $dark-gray;
+  border-radius: 50%;
+}
+
+.impression-info__input:checked:active + .impression-info__radio:before {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,5 +73,11 @@
 
   .impression-info__label {
     padding-left: 115px;
+  }
+
+  .impression-info__radio {
+    position: absolute;
+    top: -18px;
+    left: 40px;
   }
 }

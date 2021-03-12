@@ -56,6 +56,19 @@ a {
   outline: none;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $blue-active;
+  }
+
+  &:disabled {
+    background-color: $gray-disabled;
+  }
 }
 
 .input {
@@ -64,6 +77,20 @@ a {
   color: $black;
   background-color: $gray-light;
   border: none;
+
+  &:hover {
+    background-color: $gray-hover;
+  }
+
+  &:active {
+    background-color: $white;
+    outline: 2px solid $gray-hover;
+  }
+
+  &:focus {
+    background-color: $white;
+    outline: 2px solid $gray-hover;
+  }
 }
 
 .label {
