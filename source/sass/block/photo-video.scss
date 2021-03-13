@@ -18,7 +18,7 @@
   }
 }
 
-.photo-video__description{
+.photo-video__description {
   margin-top: 27px;
 }
 
@@ -40,7 +40,6 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-
   }
 
   .photo-video__title {
@@ -55,7 +54,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photo-video{
+  .photo-video {
     padding: 101px 20px 79px;
   }
 }

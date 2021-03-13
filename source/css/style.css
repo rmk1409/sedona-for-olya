@@ -183,8 +183,6 @@ a {
 @media (max-width: 767px) {
   .navigation--closed .navigation__list {
     display: none; }
-  .navigation--closed .navigation__list {
-    display: none; }
   .navigation--nojs .navigation__toggle {
     display: none; } }
 
@@ -494,7 +492,7 @@ a {
 .advantages__title-food::before {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -53px;
   width: 40px;
   height: 35px;
@@ -515,7 +513,6 @@ a {
     padding-top: 98px; }
   .advantages__item {
     min-width: 229px;
-    padding-left: 0;
     padding: 0 19px; }
   .advantages__item-one {
     order: 1; }
@@ -1091,7 +1088,7 @@ a {
   width: 58px;
   height: 58px;
   background-color: #e6e6e6; }
-  .contact-info__img--tel:before {
+  .contact-info__img--tel::before {
     position: absolute;
     content: "";
     top: 21px;
@@ -1099,7 +1096,7 @@ a {
     width: 18px;
     height: 18px;
     background-image: url("../img/phone.svg"); }
-  .contact-info__img--email:before {
+  .contact-info__img--email::before {
     position: absolute;
     content: "";
     top: 21px;
@@ -1172,7 +1169,7 @@ a {
   .impression-info__radio:active {
     background-color: #d5d5d5; }
 
-.impression-info__input:checked + .impression-info__radio:before {
+.impression-info__input:checked + .impression-info__radio::before {
   position: absolute;
   content: "";
   top: 18px;
@@ -1182,7 +1179,7 @@ a {
   background-color: #333333;
   border-radius: 50%; }
 
-.impression-info__input:checked:active + .impression-info__radio:before {
+.impression-info__input:checked:active + .impression-info__radio::before {
   opacity: 0.3; }
 
 @media (min-width: 768px) {
@@ -1236,7 +1233,7 @@ a {
   .visited-info__checkbox:active {
     background-color: #d5d5d5; }
 
-.visited-info__input:checked + .visited-info__checkbox:before {
+.visited-info__input:checked + .visited-info__checkbox::before {
   position: absolute;
   content: "";
   top: 19px;
@@ -1245,7 +1242,7 @@ a {
   height: 16px;
   background-image: url("../img/tick.svg"); }
 
-.visited-info__input:checked:active + .visited-info__checkbox:before {
+.visited-info__input:checked:active + .visited-info__checkbox::before {
   opacity: 0.3; }
 
 @media (min-width: 768px) {

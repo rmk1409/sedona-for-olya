@@ -33,7 +33,7 @@
   height: 58px;
   background-color: $gray-form;
 
-  &--tel:before {
+  &--tel::before {
     position: absolute;
     content: "";
     top: 21px;
@@ -43,7 +43,7 @@
     background-image: url("../img/phone.svg");
   }
 
-  &--email:before {
+  &--email::before {
     position: absolute;
     content: "";
     top: 21px;

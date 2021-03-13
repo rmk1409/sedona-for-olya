@@ -49,7 +49,7 @@
 
     &--second {
       padding-top: 43px;
-      padding-right: 35px;;
+      padding-right: 35px;
     }
   }
 
@@ -68,7 +68,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .reason__text {
     max-width: 400px;
     padding: 50px 66px 54px;
@@ -77,6 +76,7 @@
       padding: 50px 84px 58px;
     }
   }
+
   .reason__title {
     max-width: 215px;
   }

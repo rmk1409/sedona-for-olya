@@ -41,7 +41,7 @@
   }
 }
 
-.impression-info__input:checked + .impression-info__radio:before {
+.impression-info__input:checked + .impression-info__radio::before {
   position: absolute;
   content: "";
   top: 18px;
@@ -52,7 +52,7 @@
   border-radius: 50%;
 }
 
-.impression-info__input:checked:active + .impression-info__radio:before {
+.impression-info__input:checked:active + .impression-info__radio::before {
   opacity: 0.3;
 }
 

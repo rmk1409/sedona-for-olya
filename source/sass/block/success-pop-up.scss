@@ -2,12 +2,12 @@
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   display: none;
   width: 100%;
   padding: 38px 0;
   background-color: $white;
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15)
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .success-pop-up__wrapper {
@@ -53,8 +53,4 @@
   .success-pop-up__button {
     font-size: 21px;
   }
-}
-
-@media (min-width: $desktop-width) {
-
 }

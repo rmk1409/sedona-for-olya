@@ -46,7 +46,7 @@
 .advantages__title-food::before {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -53px;
   width: 40px;
   height: 35px;
@@ -58,8 +58,6 @@
 .advantages__br-desktop {
   display: none;
 }
-
-
 
 @media (min-width: $tablet-width) {
   .advantages {
@@ -75,7 +73,6 @@
 
   .advantages__item {
     min-width: 229px;
-    padding-left: 0;
     padding: 0 19px;
   }
 
