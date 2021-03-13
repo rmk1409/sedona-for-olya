@@ -9,6 +9,11 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-desktop@2x.jpg");
+    background-size: cover;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -43,17 +48,40 @@
 @media (min-width: $tablet-width) {
   .header-img {
     min-height: 520px;
+    padding-top: 79px;
+    margin-top: -34px;
 
     &--catalog {
       min-height: 292px;
+      padding-top: 94px;
     }
+  }
+
+  .header-img__group {
+    gap: 51px;
+  }
+
+  .header-img__welcome {
+    width: 258px;
+  }
+
+  .header-img__sedona {
+    width: 463px;
+  }
+
+  .header-img__because {
+    width: 297px;
+    margin-right: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header-img {
+    margin-top: -48px;
+
     &--catalog {
       min-height: 303px;
+      padding-top: 101px;
     }
   }
 }

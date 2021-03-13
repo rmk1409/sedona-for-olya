@@ -19,7 +19,11 @@
         </li>
         <li class="nav-list__item nav-list__item--logo">
           <a class="nav-list__link nav-list__link--logo" href="index.html">
-            <img class="nav-list__logo" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img class="nav-list__logo" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+            </picture>
           </a>
         </li>
         <li class="nav-list__item">
@@ -40,7 +44,7 @@
   <section class="header-img header-img--catalog">
     <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
     <div class="container">
-      <img class="header-img__name" src="img/sedona-catalog-mobile.svg" width="229" height="39" alt="Седона">
+      <img class="header-img__sedona" src="img/sedona.svg" width="282" height="49" alt="Седона">
     </div>
   </section>
 </header>
@@ -56,7 +60,11 @@
     <li class="photo-block__card">
       <div class="photo-block__container container">
         <a>
-          <img class="photo-block__img photo-block__img--first" src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+          <picture class="picture">
+            <source media="(min-width: 768px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <img class="photo-block__img photo-block__img--first" src="img/photo-1-mobile@1x.jpg"
+                 srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+          </picture>
         </a>
         <div class="photo-block__grid">
           <div class="photo-block__text">
@@ -66,7 +74,8 @@
           <div class="photo-block__group">
             <a class="photo-block__like" href="#">
               <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                <path
+                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
               </svg>
             </a>
             <span class="photo-block__counter">1350</span>
@@ -77,7 +86,11 @@
     <li class="photo-block__card">
       <div class="photo-block__container container">
         <a>
-          <img class="photo-block__img" src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+          <picture class="picture">
+            <source media="(min-width: 768px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <img class="photo-block__img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
+                 width="280" height="280" alt="Местная растительность">
+          </picture>
         </a>
         <div class="photo-block__grid">
           <div class="photo-block__text">
@@ -87,7 +100,8 @@
           <div class="photo-block__group">
             <a class="photo-block__like" href="#">
               <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                <path
+                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
               </svg>
             </a>
             <span class="photo-block__counter">143</span>
@@ -98,7 +112,11 @@
     <li class="photo-block__card">
       <div class="photo-block__container container">
         <a>
-          <img class="photo-block__img" src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+          <picture class="picture">
+            <source media="(min-width: 768px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <img class="photo-block__img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+                 width="280" height="280" alt="Дорога на север">
+          </picture>
         </a>
         <div class="photo-block__grid">
           <div class="photo-block__text">
@@ -108,7 +126,8 @@
           <div class="photo-block__group">
             <a class="photo-block__like" href="#">
               <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                <path
+                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
               </svg>
             </a>
             <span class="photo-block__counter">96</span>
@@ -119,7 +138,11 @@
     <li class="photo-block__card">
       <div class="photo-block__container container">
         <a>
-          <img class="photo-block__img" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявол">
+          <picture class="picture">
+            <source media="(min-width: 768px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+            <img class="photo-block__img" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg" width="280"
+                 height="280" alt="Мост дьявол">
+          </picture>
         </a>
         <div class="photo-block__grid">
           <div class="photo-block__text">
@@ -129,7 +152,8 @@
           <div class="photo-block__group">
             <a class="photo-block__like" href="#">
               <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                <path
+                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
               </svg>
             </a>
             <span class="photo-block__counter">254</span>
@@ -147,7 +171,11 @@
       </p>
     </div>
     <section class="presentation__video video">
-      <img class="video__img" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видео презентация про Седону">
+      <picture class="picture">
+        <source media="(min-width: 768px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+        <img class="video__img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201"
+             alt="Видео презентация про Седону">
+      </picture>
       <section class="video__player">
         <div class="video__track">
           <span class="video__slider"></span>
@@ -220,7 +248,8 @@
     <h2 class="development__title">Разработано</h2>
     <a href="#">
       <svg class="development__logo" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+        <path
+          d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
       </svg>
     </a>
   </section>
