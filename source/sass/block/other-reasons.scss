@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
 }
 
 .other-reasons__text {
@@ -11,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 23px 16px 22px;
+  padding: 25px 16px 23px;
 
   &:nth-child(1),
   &:nth-child(2) {
@@ -62,7 +61,7 @@
 
 @media (min-width: $desktop-width) {
   .other-reasons {
-    padding: 15px 0 42px;
+    padding: 15px 0 39px;
   }
 
   .other-reasons__text {

@@ -1,7 +1,8 @@
 .advantages {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 25px;
+  max-width: 500px;
   padding: 34px 24px;
   margin: 0 auto;
   text-align: start;
@@ -14,7 +15,6 @@
 
 .advantages__item {
   padding-left: 17%;
-  max-width: 491px;
 }
 
 .advantages__title {
@@ -63,6 +63,7 @@
   .advantages {
     flex-direction: row;
     gap: 27px;
+    max-width: 768px;
     padding: 59px 13px 60px;
     text-align: center;
   }
@@ -134,7 +135,8 @@
 @media (min-width: $desktop-width) {
   .advantages {
     justify-content: space-between;
-    padding: 55px 32px 82px;
+    max-width: 1200px;
+    padding: 60px 32px 81px;
   }
 
   .advantages__item {

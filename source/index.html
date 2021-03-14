@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Седона</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/styles.min.css" rel="stylesheet">
 </head>
 <body class="page">
 <header>
@@ -62,6 +62,7 @@
       <p class="reason__description description">Седона не аттракцион для туристов, там течет своя жизнь</p>
     </div>
     <picture class="picture">
+      <source type="image/webp" srcset="img/photo-city@1x.webp 1x, img/photo-city@2x.webp 2x">
       <img class="reason__img reason__img--first" src="img/photo-city@1x.jpg" srcset="img/photo-city@2x.jpg 2x" alt="Изображение города Седоны">
     </picture>
   </section>
@@ -69,7 +70,7 @@
     <li class="advantages__item advantages__item-one">
       <h2 class="advantages__title advantages__title-housing title">Жилье</h2>
       <p class="advantages__description description">Рекомендуем пожить в настоящем мотеле, все<br
-        class="advantages__br"> как в кино!</p>
+        class="advantages__br">&thinsp;как в кино!</p>
     </li>
     <li class="advantages__item advantages__item-two">
       <h2 class="advantages__title advantages__title-souvenirs title">Сувениры</h2>
@@ -79,7 +80,7 @@
     <li class="advantages__item  advantages__item-three">
       <h2 class="advantages__title advantages__title-food title">Еда</h2>
       <p class="advantages__description description">Всегда заказывайте фирменный бургер,
-        <br class="advantages__br">Вы не разочаруетесь!</p>
+        <br class="advantages__br">&thinsp;Вы не разочаруетесь!</p>
     </li>
   </ul>
   <section class="reason reason--second">
@@ -89,6 +90,7 @@
       <p class="reason__description description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
     </div>
     <picture class="picture">
+      <source type="image/webp" srcset="img/photo-bridge@1x.webp 1x, img/photo-bridge@2x.webp 2x">
       <img class="reason__img reason__img--second" src="img/photo-bridge@1x.jpg" srcset="img/photo-bridge@2x.jpg 2x" alt="Изображение моста Дьявола">
     </picture>
   </section>
@@ -122,8 +124,7 @@
   </section>
   <section class="address">
     <iframe class="address__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050595179!2d-111.83015786188756!3d34.85437338107108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1614911404508!5m2!1sru!2sby"
-            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050595179!2d-111.83015786188756!3d34.85437338107108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1614911404508!5m2!1sru!2sby"></iframe>
   </section>
 </main>
 <footer class="footer container">
@@ -160,7 +161,6 @@
     </a>
   </section>
 </footer>
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/toggle.js"></script>
+<script src="js/toggle-min.js"></script>
 </body>
 </html>

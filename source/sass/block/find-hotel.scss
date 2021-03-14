@@ -1,6 +1,6 @@
 .find-hotel {
   max-width: 482px;
-  padding: 34px 20px;
+  padding: 36px 20px 33px;
 }
 
 .find-hotel__title {
@@ -45,7 +45,7 @@
 
 @media (min-width: $desktop-width) {
   .find-hotel {
-    padding: 53px 12px 66px;
+    padding: 56px 12px 66px;
   }
 
   .find-hotel__description {

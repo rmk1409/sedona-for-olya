@@ -1,6 +1,7 @@
 .reason {
   display: flex;
   flex-direction: column;
+  background-color: $blue;
 }
 
 .reason__text {
@@ -9,12 +10,12 @@
   justify-content: center;
   gap: 11px;
   align-items: center;
-  padding: 50px 12px 38px;
+  padding: 68px 12px 38px;
   color: $white;
   background-color: $blue;
 
   &--second {
-    padding: 38px 12px 38px;
+    padding: 38px 12px 35px;
   }
 }
 
@@ -27,6 +28,7 @@
 }
 
 .reason__description {
+  max-width: 500px;
   margin-top: 4px;
   line-height: 22px;
 }
@@ -73,7 +75,7 @@
     padding: 50px 66px 54px;
 
     &--second {
-      padding: 50px 84px 58px;
+      padding: 52px 84px 52px;
     }
   }
 
