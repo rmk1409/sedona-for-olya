@@ -10,7 +10,7 @@
 .impression-info__list {
   display: flex;
   flex-direction: column;
-  gap: 46px;
+  gap: 48px;
   margin-top: 39px;
 }
 
@@ -20,6 +20,7 @@
 
 .impression-info__label {
   position: relative;
+  display: block;
   padding-left: 79px;
 }
 
@@ -54,6 +55,10 @@
 
 .impression-info__input:checked:active + .impression-info__radio::before {
   opacity: 0.3;
+}
+
+.impression-info__input:checked:focus + .impression-info__radio::before {
+  outline: 2px solid $black;
 }
 
 @media (min-width: $tablet-width) {

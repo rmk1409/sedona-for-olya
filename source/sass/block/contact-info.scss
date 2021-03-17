@@ -56,7 +56,7 @@
 
 @media (min-width: $tablet-width) {
   .contact-info {
-    padding: 45px 61px 34px;
+    padding: 49px 61px 34px;
     border-bottom: none;
   }
 
@@ -68,11 +68,35 @@
   .contact-info__input {
     margin-top: 12px;
   }
+
+  .contact-info__title {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: -75px;
+      width: 123px;
+      height: 2px;
+      background-color: $gray-line;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 10px;
+      right: -75px;
+      width: 123px;
+      height: 2px;
+      background-color: $gray-line;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .contact-info {
-    padding: 42px 53px 38px;
+    padding: 46px 53px 38px;
   }
 
   .contact-info__span {
@@ -100,5 +124,19 @@
   .contact-info__img {
     top: 0;
     right: -3px;
+  }
+
+  .contact-info__title {
+    &::before {
+      top: 10px;
+      left: -75px;
+      width: 279px;
+    }
+
+    &::after {
+      top: 10px;
+      right: -75px;
+      width: 279px;
+    }
   }
 }

@@ -25,10 +25,48 @@
     padding: 19px 21px;
     margin-top: 56px;
   }
+
+  .comment__title {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: -75px;
+      width: 123px;
+      height: 2px;
+      background-color: $gray-line;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 10px;
+      right: -75px;
+      width: 123px;
+      height: 2px;
+      background-color: $gray-line;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .comment {
     padding: 18px 120px 28px;
+  }
+
+  .comment__title {
+    &::before {
+      top: 10px;
+      left: -75px;
+      width: 279px;
+    }
+
+    &::after {
+      top: 10px;
+      right: -75px;
+      width: 279px;
+    }
   }
 }

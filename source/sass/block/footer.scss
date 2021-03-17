@@ -16,7 +16,7 @@
   .footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 36px 119px 32px;
+    padding: 36px 60px 32px;
   }
 
   .footer__social {
@@ -26,6 +26,6 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 29px 119px 35px;
+    padding: 36px 119px 35px;
   }
 }

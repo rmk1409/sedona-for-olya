@@ -4,8 +4,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  width: 100%;
-  padding: 38px 0;
+  width: 320px;
+  padding: 38px 0 0;
   background-color: $white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
@@ -39,7 +39,7 @@
 @media (min-width: $tablet-width) {
   .success-pop-up {
     width: 639px;
-    padding: 45px 0;
+    padding: 45px 0 0;
   }
 
   .success-pop-up__title {

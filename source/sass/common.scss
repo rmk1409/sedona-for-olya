@@ -71,6 +71,11 @@ a {
   &:disabled {
     background-color: $gray-disabled;
   }
+
+  &:focus {
+    outline: 2px solid $black;
+    -moz-outline-radius: 2px;
+  }
 }
 
 .input {
@@ -91,7 +96,11 @@ a {
 
   &:focus {
     background-color: $white;
-    outline: 2px solid $gray-hover;
+    outline: 2px solid $black;
+  }
+
+  &::placeholder {
+    color: $black
   }
 }
 
@@ -121,19 +130,20 @@ a {
 
 @media (min-width: $tablet-width) {
   .container {
-    padding: 0 32px;
+    padding: 0 40px;
   }
 
   .title {
+    max-width: 496px;
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .container {
-    padding: 0 40px;
+@media (min-width: $desktop-width) {
+  .title {
+    max-width: 809px;
   }
 }
 

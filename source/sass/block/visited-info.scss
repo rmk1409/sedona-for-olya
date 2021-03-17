@@ -24,6 +24,7 @@
 
 .visited-info__label {
   position: relative;
+  max-width: 100px;
 }
 
 .visited-info__checkbox {
@@ -73,12 +74,35 @@
   }
 
   .visited-info__title {
-    width: 309px;
     margin: 0 auto;
   }
 
   .visited-info__item {
     padding-left: 85px;
+  }
+
+  .visited-info__title {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 25px;
+      left: -90px;
+      width: 127px;
+      height: 2px;
+      background-color: $gray-line;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 25px;
+      right: -90px;
+      width: 127px;
+      height: 2px;
+      background-color: $gray-line;
+    }
   }
 }
 
@@ -93,5 +117,20 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 63px;
+  }
+
+  .visited-info__title {
+
+    &::before {
+      top: 25px;
+      left: -75px;
+      width: 281px;
+    }
+
+    &::after {
+      top: 25px;
+      right: -75px;
+      width: 281px;
+    }
   }
 }

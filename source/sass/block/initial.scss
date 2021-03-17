@@ -46,6 +46,10 @@
       display: none;
     }
   }
+
+  .initial__title {
+    max-width: 500px;
+  }
 }
 
 @media (min-width: $desktop-width) {

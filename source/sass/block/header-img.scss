@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: $gray;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-desktop@2x.jpg");

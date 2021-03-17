@@ -1,5 +1,5 @@
 .presentation {
-  padding: 31px 0 40px;
+  padding: 31px 0 38px;
 }
 
 .presentation__description {
@@ -10,7 +10,7 @@
 
 @media (min-width: $tablet-width) {
   .presentation {
-    padding: 58px 0 49px;
+    padding: 58px 0 40px;
   }
 
   .presentation__title {
@@ -30,6 +30,6 @@
 
 @media (min-width: $desktop-width) {
   .presentation {
-    padding: 61px 0 92px;
+    padding: 51px 0 82px;
   }
 }
