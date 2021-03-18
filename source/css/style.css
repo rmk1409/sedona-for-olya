@@ -1310,12 +1310,11 @@ a {
     -moz-column-gap: 53px;
          column-gap: 53px;
     row-gap: 65px; }
-  .visited-info__title {
-    margin: 0 auto; }
   .visited-info__item {
     padding-left: 85px; }
   .visited-info__title {
-    position: relative; }
+    position: relative;
+    margin: 0 auto; }
     .visited-info__title::before {
       position: absolute;
       content: "";

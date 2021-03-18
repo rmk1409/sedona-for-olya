@@ -8,10 +8,10 @@
 }
 
 .visited-info__list {
-  margin-top: 38px;
   display: flex;
   flex-direction: column;
   gap: 57px;
+  margin-top: 38px;
 }
 
 .visited-info__item {
@@ -68,13 +68,9 @@
   .visited-info__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 61px;
     column-gap: 53px;
     row-gap: 65px;
-  }
-
-  .visited-info__title {
-    margin: 0 auto;
+    margin-top: 61px;
   }
 
   .visited-info__item {
@@ -83,6 +79,7 @@
 
   .visited-info__title {
     position: relative;
+    margin: 0 auto;
 
     &::before {
       position: absolute;
@@ -120,7 +117,6 @@
   }
 
   .visited-info__title {
-
     &::before {
       top: 25px;
       left: -75px;
