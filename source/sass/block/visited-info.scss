@@ -1,0 +1,132 @@
+.visited-info {
+  padding: 12px 20px 41px;
+  border-bottom: 1px solid $gray-disabled;
+}
+
+.visited-info__title {
+  text-align: center;
+}
+
+.visited-info__list {
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+  margin-top: 38px;
+}
+
+.visited-info__item {
+  padding-left: 79px;
+}
+
+.visited-info__input {
+  display: none;
+}
+
+.visited-info__label {
+  position: relative;
+  max-width: 100px;
+}
+
+.visited-info__checkbox {
+  position: absolute;
+  top: -16px;
+  left: -79px;
+  width: 56px;
+  height: 56px;
+  background-color: $gray-light;
+  border-radius: 5%;
+
+  &:hover {
+    background-color: $gray-hover;
+  }
+
+  &:active {
+    background-color: $gray-active;
+  }
+}
+
+.visited-info__input:checked + .visited-info__checkbox::before {
+  position: absolute;
+  content: "";
+  top: 19px;
+  left: 16px;
+  width: 23px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
+}
+
+.visited-info__input:checked:active + .visited-info__checkbox::before {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .visited-info {
+    padding: 15px 150px 66px;
+    border-bottom: none;
+  }
+
+  .visited-info__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 53px;
+    row-gap: 65px;
+    margin-top: 61px;
+  }
+
+  .visited-info__item {
+    padding-left: 85px;
+  }
+
+  .visited-info__title {
+    position: relative;
+    margin: 0 auto;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 25px;
+      left: -90px;
+      width: 127px;
+      height: 2px;
+      background-color: $gray-line;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 25px;
+      right: -90px;
+      width: 127px;
+      height: 2px;
+      background-color: $gray-line;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .visited-info {
+    padding: 15px 116px 66px;
+  }
+
+  .visited-info__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 63px;
+  }
+
+  .visited-info__title {
+    &::before {
+      top: 25px;
+      left: -75px;
+      width: 281px;
+    }
+
+    &::after {
+      top: 25px;
+      right: -75px;
+      width: 281px;
+    }
+  }
+}

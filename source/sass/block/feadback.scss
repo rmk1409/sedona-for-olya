@@ -1,0 +1,29 @@
+.feedback {
+  padding: 35px 20px 18px;
+}
+
+.feedback__description {
+  margin-top: 28px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    padding: 63px 20px 86px;
+  }
+
+  .feedback__title {
+    font-size: 30px;
+  }
+
+  .feedback__description {
+    width: 437px;
+    margin: 32px auto 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    padding: 113px 120px 59px;
+  }
+}

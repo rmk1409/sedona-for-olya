@@ -1,0 +1,73 @@
+.form {
+  padding-bottom: 20px;
+  text-align: start;
+}
+
+.form__group {
+  padding: 17px 20px;
+}
+
+.form__description {
+  display: none;
+  max-width: 200px;
+}
+
+.form__button {
+  padding: 19px 20px 13px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-bottom: 35px;
+  }
+
+  .form__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form__impression-info {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .form__contact-info {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .form__description {
+    display: block;
+    margin: 0;
+  }
+
+  .form__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+  }
+
+  .form__button {
+    max-width: 324px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-bottom: 45px;
+  }
+
+  .form__grid {
+    padding: 0 63px;
+  }
+
+  .form__group {
+    padding: 22px 120px;
+  }
+
+  .form__button {
+    max-width: 480px;
+  }
+}

@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+  padding: 39px 20px 16px;
+}
+
+.footer__title {
+  max-width: 166px;
+  margin: 0;
+  font-size: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 36px 60px 32px;
+  }
+
+  .footer__social {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 36px 119px 35px;
+  }
+}

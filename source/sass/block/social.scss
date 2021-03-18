@@ -1,0 +1,28 @@
+.social {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  width: 152px;
+}
+
+.social__link {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 46px;
+  height: 48px;
+  background-color: $blue;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+  }
+
+  &:active .social__logo {
+    opacity: 0.3;
+  }
+}

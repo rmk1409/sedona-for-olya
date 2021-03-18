@@ -1,0 +1,88 @@
+.impression-info {
+  padding: 18px 20px 43px;
+  border-bottom: 1px solid $gray-disabled;
+}
+
+.impression-info__title {
+  text-align: center;
+}
+
+.impression-info__list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 39px;
+}
+
+.impression-info__input {
+  display: none;
+}
+
+.impression-info__label {
+  position: relative;
+  display: block;
+  padding-left: 79px;
+}
+
+.impression-info__radio {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  background-color: $gray-light;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $gray-hover;
+  }
+
+  &:active {
+    background-color: $gray-active;
+  }
+}
+
+.impression-info__input:checked + .impression-info__radio::before {
+  position: absolute;
+  content: "";
+  top: 18px;
+  left: 17px;
+  width: 22px;
+  height: 22px;
+  background-color: $dark-gray;
+  border-radius: 50%;
+}
+
+.impression-info__input:checked:active + .impression-info__radio::before {
+  opacity: 0.3;
+}
+
+.impression-info__input:checked:focus + .impression-info__radio::before {
+  outline: 2px solid $black;
+}
+
+@media (min-width: $tablet-width) {
+  .impression-info {
+    padding: 0 20px 43px;
+    border-bottom: none;
+  }
+
+  .impression-info__title {
+    margin-left: 7px;
+  }
+
+  .impression-info__list {
+    gap: 55px;
+    margin-top: 75px;
+  }
+
+  .impression-info__label {
+    padding-left: 115px;
+  }
+
+  .impression-info__radio {
+    position: absolute;
+    top: -18px;
+    left: 40px;
+  }
+}

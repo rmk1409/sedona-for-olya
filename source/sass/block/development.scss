@@ -1,0 +1,24 @@
+.development {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.development__title {
+  max-width: 120px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.development__logo {
+  margin-top: 5px;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: $black;
+    opacity: 0.3;
+  }
+}

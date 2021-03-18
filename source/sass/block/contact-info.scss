@@ -1,0 +1,142 @@
+.contact-info {
+  padding: 18px 20px 28px;
+  border-bottom: 1px solid $gray-disabled;
+}
+
+.contact-info__label {
+  position: relative;
+  margin-left: 22px;
+}
+
+.contact-info__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-info__title {
+  text-align: center;
+}
+
+.contact-info__input {
+  width: 100%;
+  padding: 23px 21px 17px;
+  margin-top: 10px;
+}
+
+.contact-info__img {
+  position: absolute;
+  top: 30px;
+  right: 1px;
+  width: 58px;
+  height: 58px;
+  background-color: $gray-form;
+
+  &--tel::before {
+    position: absolute;
+    content: "";
+    top: 21px;
+    left: 22px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/phone.svg");
+  }
+
+  &--email::before {
+    position: absolute;
+    content: "";
+    top: 21px;
+    left: 22px;
+    width: 16px;
+    height: 12px;
+    background-image: url("../img/mail.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contact-info {
+    padding: 49px 61px 34px;
+    border-bottom: none;
+  }
+
+  .contact-info__list {
+    gap: 25px;
+    margin-top: 22px;
+  }
+
+  .contact-info__input {
+    margin-top: 12px;
+  }
+
+  .contact-info__title {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: -75px;
+      width: 123px;
+      height: 2px;
+      background-color: $gray-line;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 10px;
+      right: -75px;
+      width: 123px;
+      height: 2px;
+      background-color: $gray-line;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-info {
+    padding: 46px 53px 38px;
+  }
+
+  .contact-info__span {
+    display: none;
+  }
+
+  .contact-info__input {
+    margin-top: 0;
+    margin-left: 18px;
+  }
+
+  .contact-info__list {
+    display: grid;
+    grid-template-columns: 399px 478px;
+    gap: 84px;
+    margin-top: 70px;
+  }
+
+  .contact-info__label {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .contact-info__img {
+    top: 0;
+    right: -3px;
+  }
+
+  .contact-info__title {
+    &::before {
+      top: 10px;
+      left: -75px;
+      width: 279px;
+    }
+
+    &::after {
+      top: 10px;
+      right: -75px;
+      width: 279px;
+    }
+  }
+}

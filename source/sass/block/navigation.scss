@@ -1,0 +1,95 @@
+.navigation {
+  position: relative;
+}
+
+.navigation__toggle {
+  position: absolute;
+  bottom: 43px;
+  right: 13px;
+  z-index: 2;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  curposor: inter;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.navigation--closed .navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+}
+
+.navigation--closed .navigation__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.navigation--closed .navigation__toggle:active::before {
+  opacity: 0.3;
+}
+
+@media (max-width: $mobile-width-only) {
+  .navigation--closed .navigation__list {
+    display: none;
+  }
+
+  .navigation--nojs .navigation__toggle {
+    display: none;
+  }
+}
+
+.navigation--opened .navigation__toggle {
+  top: 2px;
+  right: 12px;
+}
+
+.navigation--opened .navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+}
+
+.navigation--opened .navigation__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.navigation--opened .navigation__toggle:active::before {
+  opacity: 0.3;
+}
+
+.navigation__wrapper {
+  background-color: $blue;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__wrapper {
+    background-color: transparent;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__link {
+    display: none;
+  }
+}

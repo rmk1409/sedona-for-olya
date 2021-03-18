@@ -1,0 +1,44 @@
+.failure-pop-up {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 320px;
+  padding: 40px 55px 40px 55px;
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.failure-pop-up--show {
+  display: block;
+}
+
+.failure-pop-up__description {
+  margin-top: 27px;
+  line-height: 24px;
+}
+
+.failure-pop-up__button {
+  width: 181px;
+  margin-top: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .failure-pop-up {
+    width: 400px;
+    padding: 40px 61px 48px 61px;
+  }
+
+  .failure-pop-up__title {
+    width: 257px;
+    margin: 0 auto;
+    font-size: 31px;
+    line-height: 39px;
+  }
+
+  .failure-pop-up__button {
+    width: 272px;
+    margin-top: 37px;
+  }
+}

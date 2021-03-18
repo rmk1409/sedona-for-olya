@@ -1,0 +1,154 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+.reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.title {
+  max-width: 500px;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+}
+
+.description {
+  max-width: 500px;
+  padding: 0;
+  margin: 0 auto;
+  line-height: 25px;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 14px 20px 18px 20px;
+  margin: 0 auto;
+  font-family: "PT Sans", "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $blue;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $blue-active;
+  }
+
+  &:disabled {
+    background-color: $gray-disabled;
+  }
+
+  &:focus {
+    outline: 2px solid $black;
+    -moz-outline-radius: 2px;
+  }
+}
+
+.input {
+  font-size: 16px;
+  font-weight: bold;
+  color: $black;
+  background-color: $gray-light;
+  border: none;
+
+  &:hover {
+    background-color: $gray-hover;
+  }
+
+  &:active {
+    background-color: $white;
+    outline: 2px solid $gray-hover;
+  }
+
+  &:focus {
+    background-color: $white;
+    outline: 2px solid $black;
+  }
+
+  &::placeholder {
+    color: $black;
+  }
+}
+
+.label {
+  font-size: 18px;
+  font-weight: bold;
+  color: $black;
+  text-transform: none;
+}
+
+.fieldset-reset {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+
+.container {
+  width: auto;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.picture {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .title {
+    max-width: 496px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    max-width: 809px;
+  }
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
